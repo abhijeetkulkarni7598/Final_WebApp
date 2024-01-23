@@ -1,0 +1,66 @@
+.about-us-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    gap: 20px;
+    
+  }
+  
+  .image-container {
+    flex: 1;
+    flex-shrink: 0;
+  }
+  
+  .image-container img {
+    width: 100%;
+    border-radius: 8px;
+    object-fit: cover; /* Maintain aspect ratio for images */
+  }
+  
+  .content-container {
+    flex: 1;
+    margin-right: 20px;
+
+  }
+  
+  .title {
+    font-size: 40px;
+    margin-bottom: 5px;
+    text-align: center; /* Center the title */
+    font-family: sans-serif;
+  }
+  .headings {
+    font-size:24px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: sans-serif;
+  }
+  
+  .description {
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: justify; /* Justify the description */
+    font-family: sans-serif;
+  }
+
+  @media (max-width: 768px) {
+    .about-us-container {
+      padding: 10px; /* Reduce the padding on smaller screens */
+    }
+  
+    .image-container {
+      margin-bottom: 10px; /* Reduce the space between the image and content on smaller screens */
+    }
+  
+    .title {
+      font-size: 20px; /* Decrease the font size of the title on smaller screens */
+    }
+    .heading{
+        font-size:16px; /*Decrease the font size of the sub heading on smaller screens*/
+    }
+  
+    .description {
+      font-size: 14px; /* Decrease the font size of the description on smaller screens */
+    }
+  }

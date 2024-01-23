@@ -1,0 +1,78 @@
+
+body {
+  margin: 0;
+  font-family: 'YourFontFamily', sans-serif;
+}
+
+.slider {
+  position: relative;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.right-arrow,
+.left-arrow {
+  position: absolute;
+  top: 50%;
+  font-size: 3rem;
+  color: goldenrod;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+  transform-style: preserve-3d;
+  transition: transform 0.5s ease-in-out;
+}
+
+.right-arrow {
+  right: 100px;
+}
+
+.left-arrow {
+  left: 100px;
+}
+
+.slide {
+  opacity: 0;
+  transition-duration: 1s ease;
+}
+
+.slide.active {
+  opacity: 1;
+  transition-duration: 1s;
+  transform: scale(1.08);
+}
+
+.title {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3.5rem; 
+  color: goldenrod;
+}
+
+.image-button {
+  position: absolute;
+  top: 70%; 
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 20px;
+  background-color: goldenrod;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.image-button:hover {
+  background-color: coral;
+}

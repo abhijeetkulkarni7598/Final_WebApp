@@ -1,0 +1,60 @@
+.services-container {
+    padding:50px;
+    
+  }
+
+  .heading{
+    font-size: 40px;
+    font-family: sans-serif;
+    text-align:center;
+    margin-bottom: 5px;
+  }
+  .sub-heading{
+    font-family:sans-serif;
+    font-size:20px;
+    text-align: center;
+    margin-bottom: 20px;
+
+  }
+  .services-row {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    
+  }
+  
+  .service-col {
+    flex: 1;
+  }
+  
+  .service {
+    box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+  }
+  
+  .service-link {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .service-image {
+    height: auto;
+    width: 100%; /* Ensure images take the full width of the container */
+    height: 300px; /* Set a fixed height for images */
+    object-fit: cover; /* Maintain aspect ratio for images */
+  }
+  
+  .service-title {
+    margin-top: 16px;
+    font-size: 1.5em;
+    font-weight: bold;
+    font-family: sans-serif;
+  }
+  
+  .service-description {
+    margin-top: 8px;
+    text-align:justify;
+    font-family: sans-serif;
+  }
+  
